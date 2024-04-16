@@ -1,0 +1,24 @@
+Injeção de dependência serve para facilitar futuras manutenções em um projeto.
+
+Por exemplo:
+
+Tem-se um projeto simples que mede uma curta distância do ponto A ao ponto B.
+A distância é pequena, então é mostrada em metros.
+
+O código é simples, composto por:
+
+-MedidorDeDistância (Classe principal)
+-IMedidores (Interface) 
+-MedirMetro (Classe implementada por IMedidores)
+
+IMedidores possuí o método medir(int v1, int v2)
+
+MedidorDeDistâncias cria uma nova instancia de IMedidores utilizando MedirMetro e
+mostra no console o resultado do método medir.
+
+Caso no futuro também queira medir uma distância maior, o resultado seria numeros
+enormes mostrados em metro, então para diminuir esse numero, teria que transforma-lo
+em quilômetro(km).
+
+Para isso bastaria apenas criar uma nova classe chamada "MedirKM" que seria
+implementada por IMedidores, e por fim substituir na instância da classe principal.

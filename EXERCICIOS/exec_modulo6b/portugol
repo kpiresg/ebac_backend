@@ -1,0 +1,10 @@
+INICIO
+    hora_atual recebe 4h
+    hora_levantar recebe 4h
+    mensagem_acordar recebe "São 4 horas, hora de levantar!"
+
+    Se (hora_atual for igual à hora_levantar)
+        Mostre(mensagem_acordar)
+    Senão
+        Aguarde hora_atual ser igual hora_levantar
+FIM

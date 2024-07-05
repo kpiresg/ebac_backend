@@ -23,7 +23,7 @@ public class App {
 
         iProdutoDAO.cadastrar(new Produto(
                 12l,
-                "ketchp"));
+                "ketchup"));
 
         System.out.println(iProdutoDAO.buscarTodos());
         System.out.println(iClienteDAO.buscarTodos());
